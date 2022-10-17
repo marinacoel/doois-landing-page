@@ -1,17 +1,33 @@
-import { blue, pink, grey } from '@mui/material/colors'
+import { pink, grey } from '@mui/material/colors'
 import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 1024,
+      lg: 1440,
+      xl: 1920,
+    },
+  },
     palette: {
-      primary: blue,
+      primary: {
+        main: '#ff5203',
+        hover: '#540303',
+        white: "#ffffff",
+      },
+      success: {
+        main: '#EA9674',
+      },
       secondary: pink,
       text: {
         primary: grey[900],
         secondary: grey[700],
       },
       background: {
-        default: '#eee',
-        paper: '#000',
+        main: '#eee',
+        paper: '#fff',
       },
       divider: grey[300],
     },
@@ -33,7 +49,15 @@ const theme = createTheme({
         defaultProps: {
           disableElevation: true,
         },
-        styleOverrides: {},
+        styleOverrides: {
+          root: {
+            borderRadius: '10px',
+            color: 'white',
+            "&:hover": {
+              backgroundColor: '#540303',
+            }
+          }
+        },
       },
       MuiTextField: {
         defaultProps: {
