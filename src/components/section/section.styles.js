@@ -104,7 +104,7 @@ export const sectionStyles = makeStyles((theme) => ({
     s_five_icon_row: {
       cursor:'pointer'
     },
-    row_s_five_txt: {
+    s_five_txt_row: {
       cursor: 'pointer'
     }
 

@@ -120,9 +120,9 @@ export const Section = () => {
           </Typography>
 
           <div className={classes.s_five_icon}>
-            <InstagramIcon className={classes.row_s_five_icon} />
-            <FacebookIcon className={classes.row_s_five_icon} />
-            <EmailIcon className={classes.row_s_five_icon} />
+            <InstagramIcon className={classes.s_five_icon_row} />
+            <FacebookIcon className={classes.s_five_icon_row} />
+            <EmailIcon className={classes.s_five_icon_row} />
           </div>
         </div>
         <div className={classes.s_five_row}>
@@ -157,7 +157,7 @@ export const Section = () => {
             Sownload for Play Store{' '}
           </Typography>
         </div>
-      </section>
+      </section>s
     </>
   )
 }
