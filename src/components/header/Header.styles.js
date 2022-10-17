@@ -1,15 +1,19 @@
+import { LowPriority } from '@mui/icons-material'
 import { makeStyles } from '@mui/styles'
 
-export const headerStyles = makeStyles(() => ({
-    lp_header: {
+export const headerStyles = makeStyles((theme) => ({
+    header: {
       boxSizing: 'border-box',
   
       width: '100%',
-      minHeight: '50vh',
+      height: '4.5rem',
 
-      backgroundColor: '#000',
+      backgroundColor: theme.palette.primary.main,
   
       display: 'flex',
+      flexDirection:'row',
       alignItems: 'center',
-    }
+      justifyContent: 'space-around',
+      padding: '24px',
+    },
   }))
