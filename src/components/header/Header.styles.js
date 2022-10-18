@@ -1,4 +1,3 @@
-import { LowPriority } from '@mui/icons-material'
 import { makeStyles } from '@mui/styles'
 
 export const headerStyles = makeStyles((theme) => ({
