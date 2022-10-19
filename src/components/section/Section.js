@@ -1,4 +1,4 @@
-import { Button, IconButton, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import EmailIcon from '@mui/icons-material/Email'
@@ -100,7 +100,7 @@ export const Section = () => {
             ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus com odo
             viverra maecenas.
           </Typography>
-          <Button variant="contained" color="success" className={classes.s_btn}>
+          <Button variant="contained" className={classes.s_btn}>
             Download now
           </Button>
         </div>
@@ -120,13 +120,12 @@ export const Section = () => {
           </Typography>
 
           <div className={classes.s_five_icon}>
-            <IconButton>
-              <InstagramIcon className={classes.s_five_icon_row} />
-              <FacebookIcon className={classes.s_five_icon_row} />
-              <EmailIcon className={classes.s_five_icon_row} />
-            </IconButton>
+            <InstagramIcon className={classes.s_five_icon_row} />
+            <FacebookIcon className={classes.s_five_icon_row} />
+            <EmailIcon className={classes.s_five_icon_row} />
 
           </div>
+
         </div>
         <div className={classes.s_five_column}>
           <div className={classes.s_five_column_one}>
