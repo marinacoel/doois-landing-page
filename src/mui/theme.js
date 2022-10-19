@@ -74,6 +74,10 @@ theme = createTheme(theme, {
           height: '1.7rem',
 
           fill: theme.palette.primary.white,
+
+          // '&:hover': {
+          //   backgroundColor: theme.palette.primary.hover,
+          // },
         },
       },
     },
