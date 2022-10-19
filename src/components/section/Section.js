@@ -1,4 +1,4 @@
-import { Button, Typography } from '@mui/material'
+import { Button, IconButton, Typography } from '@mui/material'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import EmailIcon from '@mui/icons-material/Email'
@@ -14,8 +14,8 @@ export const Section = () => {
   const classes = sectionStyles()
 
   return (
-    <>
-      <section id="home" className={classes.section}>
+    <div className={classes.section}>
+      <section id="home" className={classes.s_one}>
         <div className={classes.s_row}>
           <video
             className={classes.s_video}
@@ -77,21 +77,22 @@ export const Section = () => {
       <section
         id="about"
         className={classes.s_three}
-        style={{ backgroundImage: `url(${background})` }}
-      >
-        <Typography variant="h4" color="primary.white">
-          Promote your store with Doois
-        </Typography>
-        <Typography variant="h6" color="primary.white" className={classes.s_three_txt}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
-        </Typography>
+        style={{ backgroundImage: `url(${background})` }}>
+        {/* <div className={classes.s_three_row}> */}
+          <Typography variant="h4" color="primary.white" className={classes.s_three_title}>
+            Promote your store with Doois
+          </Typography>
+          <Typography variant="h6" color="primary.white" className={classes.s_three_txt}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.
+          </Typography>
+        {/* </div> */}
       </section>
 
       <section id="services" className={classes.s_four}>
         <div className={classes.s_four_row}>
-          <Typography variant="h4" className={classes.s_four_txt}>
+          <Typography variant="h4" className={classes.s_four_title}>
             Features that give you real feel
           </Typography>
           <Typography variant="body1" className={classes.s_four_txt}>
@@ -108,56 +109,60 @@ export const Section = () => {
 
       <section id="contact" className={classes.s_five}>
         <div className={classes.s_five_row}>
-          <Typography variant="h4" color="primary.white">
+          <Typography variant="h4" color="primary.white" className={classes.s_five_row_title}>
             {' '}
             DOOIS{' '}
           </Typography>
 
-          <Typography variant="body1" color="primary.white">
+          <Typography variant="body1" color="primary.white" className={classes.s_five_row_txt}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus com odo
-            viverra maecenas.
+            ut labore et dolore magna aliqua. 
           </Typography>
 
           <div className={classes.s_five_icon}>
-            <InstagramIcon className={classes.s_five_icon_row} />
-            <FacebookIcon className={classes.s_five_icon_row} />
-            <EmailIcon className={classes.s_five_icon_row} />
+            <IconButton>
+              <InstagramIcon className={classes.s_five_icon_row} />
+              <FacebookIcon className={classes.s_five_icon_row} />
+              <EmailIcon className={classes.s_five_icon_row} />
+            </IconButton>
+
           </div>
         </div>
-        <div className={classes.s_five_row}>
-          <Typography variant="h6" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Services{' '}
-          </Typography>
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Team management{' '}
-          </Typography>
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Colaboration{' '}
-          </Typography>
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Events{' '}
-          </Typography>
+        <div className={classes.s_five_column}>
+          <div className={classes.s_five_column_one}>
+            <Typography variant="h6" color="primary.white" className={classes.s_five_column_title}>
+              {' '}
+              Services{' '}
+            </Typography>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Team management{' '}
+            </Typography>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Colaboration{' '}
+            </Typography>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Events{' '}
+            </Typography>
+          </div>
+          <div className={classes.s_five_column_two}>
+            <Typography variant="h6" color="primary.white" className={classes.s_five_column_title}>
+              {' '}
+              Downloads{' '}
+            </Typography>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Download for Apple Store{' '}
+            </Typography>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Download for Play Store{' '}
+            </Typography>
+          </div>
         </div>
-        <div className={classes.s_five_row}>
-          <Typography variant="h6" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Downloads{' '}
-          </Typography>
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Download for Apple Store{' '}
-          </Typography>
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
-            {' '}
-            Sownload for Play Store{' '}
-          </Typography>
-        </div>
-      </section>s
-    </>
+      </section>
+    </div>
   )
 }
