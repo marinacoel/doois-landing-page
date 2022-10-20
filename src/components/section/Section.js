@@ -32,7 +32,7 @@ export const Section = () => {
       </section>
 
       <section id="how" className={classes.s_two}>
-        <div className={classes.stwo_row}>
+        <div className={classes.s_two_row}>
           <Typography variant="h4" className={classes.s_two_txt}>
             How to use Doois app
           </Typography>
@@ -114,7 +114,7 @@ export const Section = () => {
             DOOIS{' '}
           </Typography>
 
-          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+          <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. 
           </Typography>
@@ -129,33 +129,33 @@ export const Section = () => {
         </div>
         <div className={classes.s_five_column}>
           <div className={classes.s_five_column_one}>
-            <Typography variant="h6" color="primary.white" className={classes.s_five_column_title}>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_column_title}>
               {' '}
               Services{' '}
             </Typography>
-            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Team management{' '}
             </Typography>
-            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Colaboration{' '}
             </Typography>
-            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Events{' '}
             </Typography>
           </div>
           <div className={classes.s_five_column_two}>
-            <Typography variant="h6" color="primary.white" className={classes.s_five_column_title}>
+            <Typography variant="body1" color="primary.white" className={classes.s_five_column_title}>
               {' '}
               Downloads{' '}
             </Typography>
-            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Download for Apple Store{' '}
             </Typography>
-            <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Download for Play Store{' '}
             </Typography>

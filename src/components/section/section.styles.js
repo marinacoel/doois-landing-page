@@ -46,6 +46,9 @@ export const sectionStyles = makeStyles((theme) => ({
     s_two:{
       height: '100vh',
 
+      boxSizing:'border-box',
+      padding:'20px',
+
       display: 'flex',
       flexDirection:'column',
       alignItems: 'center',
@@ -71,8 +74,14 @@ export const sectionStyles = makeStyles((theme) => ({
         gap:'50px',
       }
     },
+    s_two_txt: {
+      textAlign: 'center',
+    },
     s_three: {
       height: '100vh',
+
+      boxSizing:'border-box',
+      padding:'20px',
 
       display: 'flex',
       flexDirection:'column',
@@ -89,6 +98,9 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_four: {
       height: '100vh',
+      boxSizing:'border-box',
+      padding:'20px',
+
       overflow: 'hidden',
 
       display: 'flex',
@@ -141,7 +153,7 @@ export const sectionStyles = makeStyles((theme) => ({
       height: '50vh',
 
       boxSizing: 'boder-box',
-      padding:'20px',
+      padding:'40px',
 
 
       backgroundColor: theme.palette.primary.main,
@@ -150,8 +162,6 @@ export const sectionStyles = makeStyles((theme) => ({
       flexDirection:'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      margin: 'auto',
-      padding: '70px',
 
       [theme.breakpoints.down('md')]:{
         display: 'flex',
@@ -182,6 +192,7 @@ export const sectionStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('md')]:{
         margin: '0',
         widht: '100%',
+        
       },
     },
     s_five_icon: {
@@ -191,9 +202,6 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_five_icon_row: {
       cursor:'pointer',
-      '&:hover': {
-        backgroundColor: theme.palette.primary.hover,
-      }
     },
     s_five_txt_row: {
       cursor: 'pointer',
