@@ -104,7 +104,7 @@ export const Section = () => {
             Download now
           </Button>
         </div>
-        <img className={classes.s_img} src={gps} />
+        <img className={classes.s_four_img} src={gps} />
       </section>
 
       <section id="contact" className={classes.s_five}>
@@ -114,7 +114,7 @@ export const Section = () => {
             DOOIS{' '}
           </Typography>
 
-          <Typography variant="body1" color="primary.white" className={classes.s_five_row_txt}>
+          <Typography variant="body1" color="primary.white" className={classes.s_five_txt_row}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. 
           </Typography>

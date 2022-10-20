@@ -89,11 +89,18 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_four: {
       height: '100vh',
+      overflow: 'hidden',
 
       display: 'flex',
       flexDirection:'row',
       alignItems: 'center',
       justifyContent: 'space-between',
+
+      [theme.breakpoints.down('md')]:{
+        display:'flex',
+        flexDirection:'column',
+        padding: '50px'
+      },
 
     },
     s_four_row: {
@@ -115,10 +122,27 @@ export const sectionStyles = makeStyles((theme) => ({
     s_four_title:{
       [theme.breakpoints.down('md')]:{
         textAlign:'center',
+        
       },
+    },
+    s_four_img: {
+      width: '400px',
+      height: '400px',
+      marginRight: '150px',
+
+      [theme.breakpoints.down('md')]:{
+        widht: '100%',
+        height: '100%',
+        margin: 0,
+      },
+
     },
     s_five: {
       height: '50vh',
+
+      boxSizing: 'boder-box',
+      padding:'20px',
+
 
       backgroundColor: theme.palette.primary.main,
   
@@ -128,6 +152,11 @@ export const sectionStyles = makeStyles((theme) => ({
       justifyContent: 'space-between',
       margin: 'auto',
       padding: '70px',
+
+      [theme.breakpoints.down('md')]:{
+        display: 'flex',
+        flexDirection:'column',
+      },
     },
     s_five_row:{
       display: 'flex',
@@ -135,20 +164,24 @@ export const sectionStyles = makeStyles((theme) => ({
 
       gap:'10px',
       width:'40%',
+
       [theme.breakpoints.down('md')]:{
-        widht: '100%'
+        width:'100%',
+        margin: 'auto',
+        maxHeight: '90%',
       },
     },
     s_five_column: {
       display: 'flex',
       flexDirection: 'row',
+      justifyContent: 'space-evenly',
       marginLeft: '100px',
       marginRight: '100px',
       gap:'50px',
 
       [theme.breakpoints.down('md')]:{
-        marginLeft: '0px',
-        marginRight: '0px',
+        margin: '0',
+        widht: '100%',
       },
     },
     s_five_icon: {
@@ -157,12 +190,14 @@ export const sectionStyles = makeStyles((theme) => ({
       gap: '10px',
     },
     s_five_icon_row: {
-      cursor:'pointer'
+      cursor:'pointer',
+      '&:hover': {
+        backgroundColor: theme.palette.primary.hover,
+      }
     },
     s_five_txt_row: {
       cursor: 'pointer',
+      [theme.breakpoints.down('md')]:{
+      }
     }
-
-
-
   }))
