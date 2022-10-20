@@ -22,14 +22,18 @@ export const mobileNavbarStyles = makeStyles((theme) => ({
       inset: '0 0 auto auto !important'
     },
     mn_menu: {  
-      width: '300px',
+      width: '40vw',
       height: '100%',
       boxSizing: 'border-box',
       padding: '1rem',
 
       background: theme.palette.primary.main,
 
-      position: 'relative'
+      position: 'relative', 
+
+       [theme.breakpoints.down('sm')]: {
+        width: '100vw'
+       },
     },
     mn_txt_wrapper: {
       display: 'flex',
