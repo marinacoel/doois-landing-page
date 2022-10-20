@@ -12,7 +12,7 @@ export const desktopNavbarStyles = makeStyles((theme) => ({
       display: 'flex',
       flexDirection:'row',
       alignItems: 'center',
-      justifyContent: 'space-around',
+      justifyContent: 'space-between',
       padding: '24px',
     },
     dn_img: {
