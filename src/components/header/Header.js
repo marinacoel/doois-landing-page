@@ -5,7 +5,7 @@ import { DesktopNabvar } from './desktop-navbar/DesktopNavbar'
 
 import { useTheme, useMediaQuery, AppBar } from '@mui/material'
 
-import { headerStyles } from './header.styles'
+// import { headerStyles } from './header.styles'
 
 function ElevationScroll(props) {
   const { children, window } = props
@@ -21,13 +21,13 @@ function ElevationScroll(props) {
 }
 
 export const Header = props => {
-  const classes = headerStyles()
+  // const classes = headerStyles()
   const theme = useTheme()
   const mobileViewport = useMediaQuery(theme.breakpoints.down('md'))	
 
   return (
     <ElevationScroll {...props}>
-      <AppBar elevation={0} position="fixed" className={classes.header}>
+      <AppBar elevation={0} position="fixed" >
         {mobileViewport ? <MobileNavbar /> : <DesktopNabvar />}
       </AppBar>
     </ElevationScroll>
