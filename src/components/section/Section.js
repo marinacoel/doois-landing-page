@@ -4,9 +4,11 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import EmailIcon from '@mui/icons-material/Email'
 
 import img from 'assets/section/Frame.svg'
+import logo from 'assets/header/logo.PNG'
 import video from 'assets/section/doois.mp4'
 import background from 'assets/section/background.svg'
 import gps from 'assets/section/gps.svg'
+import playstore from 'assets/section/playstore.svg'
 
 import { sectionStyles } from './section.styles'
 
@@ -95,7 +97,7 @@ export const Section = () => {
           <Typography variant="h4" className={classes.s_four_title}>
             Features that give you real feel
           </Typography>
-          <Typography variant="body1" className={classes.s_four_txt}>
+          <Typography variant="h6" className={classes.s_four_txt}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus com odo
             viverra maecenas.
@@ -109,10 +111,9 @@ export const Section = () => {
 
       <section id="contact" className={classes.s_five}>
         <div className={classes.s_five_row}>
-          <Typography variant="h4" color="primary.white" className={classes.s_five_row_title}>
-            {' '}
-            DOOIS{' '}
-          </Typography>
+          <div className={classes.s_five_row_logo}>
+            <img src={logo} style={{width: '100px'}}/>
+          </div>
 
           <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
@@ -123,7 +124,6 @@ export const Section = () => {
             <InstagramIcon className={classes.s_five_icon_row} />
             <FacebookIcon className={classes.s_five_icon_row} />
             <EmailIcon className={classes.s_five_icon_row} />
-
           </div>
 
         </div>
@@ -151,14 +151,13 @@ export const Section = () => {
               {' '}
               Downloads{' '}
             </Typography>
-            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
+            <div className={classes.s_five_row_logo}>
               {' '}
               Download for Apple Store{' '}
-            </Typography>
-            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
-              {' '}
-              Download for Play Store{' '}
-            </Typography>
+            </div>
+            <div className={classes.s_five_row_logo}>
+              <img scr={playstore} className={classes.s_five_row_logo}/>
+            </div>
           </div>
         </div>
       </section>
