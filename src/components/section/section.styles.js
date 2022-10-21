@@ -7,6 +7,10 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_one: {
       height: '100vh',
+
+      boxSizing: 'border-box',
+      padding: '0 200px 0 0',
+
       backgroundColor: theme.palette.primary.main,
   
       display: 'flex',
@@ -14,11 +18,18 @@ export const sectionStyles = makeStyles((theme) => ({
       alignItems: 'center',
       justifyContent: 'space-evenly',
 
+      [theme.breakpoints.down('md')]: {
+        padding: '0',
+      }
+
     },
     s_row: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      [theme.breakpoints.down('md')]:{
+        gap:'80px',
+      },
     },
     s_video: {
       width: '60%',
@@ -27,7 +38,7 @@ export const sectionStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]:{
         width: '80%',
         height: '80%',
-      }
+      },
 
     },
     s_btn: {
@@ -37,7 +48,6 @@ export const sectionStyles = makeStyles((theme) => ({
     s_img: {
       width: '400px',
       height: '400px',
-      marginRight: '150px',
 
       [theme.breakpoints.down('md')]:{
         display: 'none'
@@ -48,6 +58,7 @@ export const sectionStyles = makeStyles((theme) => ({
 
       boxSizing:'border-box',
       padding:'20px',
+      overflow: 'hidden',
 
       display: 'flex',
       flexDirection:'column',
@@ -83,6 +94,8 @@ export const sectionStyles = makeStyles((theme) => ({
       boxSizing:'border-box',
       padding:'20px',
 
+      overflow: 'hidden',
+
       display: 'flex',
       flexDirection:'column',
       alignItems: 'center',
@@ -94,12 +107,14 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_three_txt: {
       width: '80%',
-
+      [theme.breakpoints.down('md')]: {
+        textAlign: 'center',
+      }    
     },
     s_four: {
       height: '100vh',
       boxSizing:'border-box',
-      padding:'20px',
+      padding:'0',
 
       overflow: 'hidden',
 
@@ -134,8 +149,12 @@ export const sectionStyles = makeStyles((theme) => ({
     s_four_title:{
       [theme.breakpoints.down('md')]:{
         textAlign:'center',
-        
       },
+    },
+    s_four_txt:{
+      [theme.breakpoints.down('md')]:{
+        textAlign:'center',
+      }
     },
     s_four_img: {
       width: '400px',
@@ -153,7 +172,7 @@ export const sectionStyles = makeStyles((theme) => ({
       height: '50vh',
 
       boxSizing: 'boder-box',
-      padding:'40px',
+      padding:'80px',
 
 
       backgroundColor: theme.palette.primary.main,
@@ -166,6 +185,9 @@ export const sectionStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('md')]:{
         display: 'flex',
         flexDirection:'column',
+        padding:'30px',
+        alignItems: 'flex-start',
+        gap: '10px',
       },
     },
     s_five_row:{
@@ -178,19 +200,18 @@ export const sectionStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('md')]:{
         width:'100%',
         margin: 'auto',
-        maxHeight: '90%',
       },
     },
     s_five_column: {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-evenly',
-      marginLeft: '100px',
-      marginRight: '100px',
+      // marginLeft: '100px',
+      // marginRight: '100px',
       gap:'50px',
 
       [theme.breakpoints.down('md')]:{
-        margin: '0',
+        margin: '0 0 auto 0',
         widht: '100%',
         
       },
@@ -202,6 +223,10 @@ export const sectionStyles = makeStyles((theme) => ({
     },
     s_five_icon_row: {
       cursor:'pointer',
+    },
+    s_five_row_logo: {
+      color: theme.palette.primary.white
+
     },
     s_five_txt_row: {
       cursor: 'pointer',
