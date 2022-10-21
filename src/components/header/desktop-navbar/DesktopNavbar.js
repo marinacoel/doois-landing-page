@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import logo from 'assets/header/logo.PNG'
 
 import { desktopNavbarStyles } from './desktopNavbar.styles'
+import { LoginButton } from './login-butto/LoginButton'
 
 export const DesktopNabvar = () => {
   const classes = desktopNavbarStyles()
@@ -61,9 +62,7 @@ export const DesktopNabvar = () => {
             Contact
           </Typography>
         </nav>
-        <Button variant="contained" color="success" className={classes.dn_btn}>
-          Login
-        </Button>
+        < LoginButton />
       </div>
     </Toolbar>
   )
