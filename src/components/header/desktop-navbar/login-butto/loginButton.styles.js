@@ -42,9 +42,11 @@ export const loginButtonStyles = makeStyles((theme) => ({
 
 		width: '100%',
 		height: '100%',
+
+		gap: '40px'
 	},
 	lb_title: {
-
+		textAlign: 'center'
 	},
 	lb_txt: {
 
@@ -54,14 +56,19 @@ export const loginButtonStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		justifyContent: 'center',
 		alignItems: 'center',
-		boxSizing: 'border-box',
-		padding: '1.5rem 0 1.5rem 0',
+		marginLeft: '20px',
 		gap: '1rem',
 
 	},
 	lb_login_button: {
 		width: '100%',
 		height: '38px',
-	}
+		marginLeft: '20px',
+	},
+	phone_registration: {
+		border: `2px solid`,
+		borderColor: theme.palette.primary.main,
+		borderRadius: `5px`,
+	},
 
 }))
