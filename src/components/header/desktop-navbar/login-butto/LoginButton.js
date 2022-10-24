@@ -8,6 +8,8 @@ import clsx from 'clsx'
 import { useState } from 'react'
 
 import { loginButtonStyles } from './loginButton.styles'
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 export const LoginButton = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -44,7 +46,12 @@ export const LoginButton = () => {
               >
                 Please enter your phone number, you will receive 4 digit code via SMS to verify.
               </Typography>
-              <input type='tel' />
+              <PhoneInput
+                id="phone_number"
+                type="tel"
+                country={'US'}
+                preferredCountries={['US']}
+                placeholder="+44 5412 123456"/>
             </div>
             <Button variant="contained" color="success" className={classes.lb_login_button}>
               Login
