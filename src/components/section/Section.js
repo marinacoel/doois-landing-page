@@ -8,7 +8,7 @@ import logo from 'assets/header/logo.PNG'
 import video from 'assets/section/doois.mp4'
 import background from 'assets/section/background.svg'
 import gps from 'assets/section/gps.svg'
-import playstore from 'assets/section/playstore.svg'
+// import playstore from 'assets/section/playstore.svg'
 
 import { sectionStyles } from './section.styles'
 
@@ -97,7 +97,7 @@ export const Section = () => {
           <Typography variant="h4" className={classes.s_four_title}>
             Features that give you real feel
           </Typography>
-          <Typography variant="h6" className={classes.s_four_txt}>
+          <Typography variant="body1" className={classes.s_four_txt}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus com odo
             viverra maecenas.
@@ -151,13 +151,14 @@ export const Section = () => {
               {' '}
               Downloads{' '}
             </Typography>
-            <div className={classes.s_five_row_logo}>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
               {' '}
               Download for Apple Store{' '}
-            </div>
-            <div className={classes.s_five_row_logo}>
-              <img scr={playstore} className={classes.s_five_row_logo}/>
-            </div>
+            </Typography>
+            <Typography variant="body2" color="primary.white" className={classes.s_five_txt_row}>
+              {' '}
+              Download for Apple Store{' '}
+            </Typography>
           </div>
         </div>
       </section>
